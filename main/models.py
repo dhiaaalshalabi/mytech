@@ -69,7 +69,7 @@ class CarouselAction(models.Model):
 
 
 class SiteSection(models.Model):
-    TYPE_CHOICES = [('why_chose', _('Why Chose'))]
+    TYPE_CHOICES = [('why_chose', _('Why Chose')), ('aboutus', _('About Us'))]
     section_type = models.CharField(max_length=50, choices=TYPE_CHOICES, verbose_name=_('Section Type'))
     name = models.CharField(max_length=20, verbose_name=_('Name'))
     label = models.CharField(max_length=20, verbose_name=_('Label'))
