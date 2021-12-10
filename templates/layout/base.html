@@ -1,0 +1,43 @@
+{% load static i18n %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}{% endblock %}</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    {% block favicon %}
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+    {% endblock %}
+    {% block css %}
+        {% block styleslib %}{% endblock %}
+    {% endblock %}
+</head>
+
+<body data-spy="scroll" data-target=".inner-link" data-offset="60">
+
+{% block container %}
+    {% block preloader %}{% endblock %}
+    {% block header %}{% endblock %}
+    {% block carousel %}{% endblock %}
+    <main>
+        {% block main %}
+            {% block content %}
+
+            {% endblock %}
+        {% endblock %}
+    </main>
+    {% block footer %}{% endblock %}
+{% endblock container %}
+{% block javascript %}
+    {% block scriptslib %}
+    {% endblock %}
+{% endblock %}
+</body>
+
+</html>

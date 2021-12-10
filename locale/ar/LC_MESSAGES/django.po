@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-10 00:13-0800\n"
+"PO-Revision-Date: 2021-12-10 00:17-0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"X-Generator: Poedit 3.0\n"
+
+#: .\main\models.py:7
+msgid "Site Title"
+msgstr "اسم الموقع "
+
+#: .\main\models.py:9 .\main\models.py:21
+msgid "Site Logo"
+msgstr "شعار الموقع"
+
+#: .\main\models.py:26
+msgid "Carousel Image"
+msgstr "الشريط المتحرك"
+
+#: .\main\models.py:31 .\main\models.py:92 .\main\models.py:122
+msgid "Title"
+msgstr "العنوان"
+
+#: .\main\models.py:33 .\main\models.py:77 .\main\models.py:94
+msgid "Description"
+msgstr "الوصف"
+
+#: .\main\models.py:36 .\main\models.py:62 .\main\models.py:82
+#: .\main\models.py:98 .\main\models.py:111
+msgid "Enabled"
+msgstr "تمكين"
+
+#: .\main\models.py:42
+msgid "Carousel"
+msgstr "الشريط المتحرك"
+
+#: .\main\models.py:47 .\main\models.py:75 .\main\models.py:108
+#: .\main\models.py:121
+msgid "Label"
+msgstr "التسمية"
+
+#: .\main\models.py:49
+msgid "Red"
+msgstr "أحمر"
+
+#: .\main\models.py:50
+msgid "Blue"
+msgstr "أزرق"
+
+#: .\main\models.py:51
+msgid "Yellow"
+msgstr "أصفر"
+
+#: .\main\models.py:52
+msgid "Dark"
+msgstr "داكن"
+
+#: .\main\models.py:56
+msgid "Button"
+msgstr "زر"
+
+#: .\main\models.py:60
+msgid "Action"
+msgstr "الإجراء"
+
+#: .\main\models.py:61
+msgid "Outline"
+msgstr "حدود"
+
+#: .\main\models.py:68
+msgid "Carousel Action"
+msgstr "إجراءات الشريط المتحرك"
+
+#: .\main\models.py:72 .\main\models.py:104
+msgid "Why Chose"
+msgstr "لماذا يتم اختيارنا"
+
+#: .\main\models.py:73
+msgid "Section Type"
+msgstr "نوع القسم"
+
+#: .\main\models.py:74
+msgid "Name"
+msgstr "الإسم"
+
+#: .\main\models.py:88
+msgid "Site Section"
+msgstr "اقسام الموقع"
+
+#: .\main\models.py:97
+msgid "Icon"
+msgstr "أيقونة"
+
+#: .\main\models.py:110
+msgid "Image"
+msgstr "صورة"
+
+#: .\main\models.py:117
+msgid "About Us Message"
+msgstr "نبذة عن رسالة منا"
+
+#: .\main\models.py:129
+msgid "Message Point"
+msgstr "نقطة الرسالة"

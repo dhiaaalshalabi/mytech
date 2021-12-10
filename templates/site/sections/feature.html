@@ -1,0 +1,33 @@
+{% load static i18n %}
+<section class="feature-section pt-130">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-7 col-md-9 mx-auto">
+                <div class="section-title text-center mb-55">
+                    <span class="wow fadeInDown" data-wow-delay=".2s">{{ site_sections.why_chose.name }}</span>
+                    <h2 class="wow fadeInUp" data-wow-delay=".4s">{{ site_sections.why_chose.label }}</h2>
+                    <p class="wow fadeInUp" data-wow-delay=".6s">{{ site_sections.why_chose.description }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for item in why_chose %}
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-box box-style">
+                        <div class="feature-icon why-chose-icon">
+                            {% if item.icon %}
+                                <img src="{{ item.icon.url }}" class="img-fluid" alt="{{ item.title }}">
+                            {% else %}
+                                <img src="{% static 'feature.png' %}" class="img-fluid" alt="{{ item.title }}">
+                            {% endif %}
+                        </div>
+                        <div class="box-content-style feature-content">
+                            <h4>{{ item.title }}</h4>
+                            <p>{{ item.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

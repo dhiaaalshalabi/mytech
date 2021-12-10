@@ -1,0 +1,39 @@
+<section class="carousel-section-wrapper">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            {% for item in carousels %}
+                <div class="carousel-section carousel-item
+                 {% if forloop.counter == 1 %}
+                 active
+                 {% endif %}
+                 clip-bg pt-225 pb-200 img-bg"
+                     style="background-image: url('{{ item.carousel.image.url }}');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-8 col-lg-10 mx-auto">
+                                <div class="carousel-content text-center">
+                                    <div class="section-title">
+                                        <h2 class="text-white">{{ item.carousel.title }}</h2>
+                                        <p class="text-white">{{ item.carousel.description }}</p>
+                                    </div>
+                                    {% for carousel_action in item.carousel_actions %}
+                                        <a href="{{ carousel_action.action }}"
+                                           class="theme-btn border-btn">{{ carousel_action.label }}</a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <a class="carousel-control carousel-control-prev" href="{% url 'index' %}#carouselExampleCaptions" role="button"
+           data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"><i
+                class="fa fa-arrow-left"></i></span></a>
+        <a class="carousel-control carousel-control-next" href="{% url 'index' %}#carouselExampleCaptions" role="button"
+           data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"><i
+                class="fa fa-arrow-right"></i></span>
+        </a>
+    </div>
+</section>
+

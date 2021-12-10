@@ -1,0 +1,46 @@
+{% load static i18n %}
+<header class="header header-3 navbar-area">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="{% url 'index' %}">
+                        {% if site_logo.logo %}
+                            <img src="{{ site_logo.logo.url }}" alt="Logo">
+                        {% else %}
+                            {{ site_logo.name }}
+                        {% endif %}
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                        <ul id="nav" class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="page-scroll" href="{% url 'index' %}"><i class="fa fa-home pe-1"></i> Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="page-scroll" href="">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="page-scroll" href="">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="page-scroll" href="">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="search-form" method="get">
+                            <input type="text" id="search" name="q" placeholder="Search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

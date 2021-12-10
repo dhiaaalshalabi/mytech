@@ -1,0 +1,9 @@
+{% extends 'layout/base_site.html' %}
+{% block content %}
+    {% if carousels %}
+        {% include 'site/sections/carousel.html' %}
+    {% endif %}
+    {% if 'why_chose' in site_sections %}
+        {% include 'site/sections/feature.html' %}
+    {% endif %}
+{% endblock %}

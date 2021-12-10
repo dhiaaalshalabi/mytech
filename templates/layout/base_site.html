@@ -1,0 +1,27 @@
+{% extends 'layout/base.html' %}
+{% block title %}{{ title|default:'Home' }}{% endblock %}
+{% block css %}
+    {% block styleslib %}
+        {% include 'layout/lib/_styles.html' %}
+    {% endblock %}
+{% endblock %}
+
+{% block container %}
+    {% block preloader %}{% include 'layout/include/preloader.html' %}{% endblock %}
+    {% block header %}{% include 'layout/include/navbar.html' %}{% endblock %}
+    {% block carousel %}{% endblock %}
+    <main>
+        {% block main %}
+            {% block content %}
+
+            {% endblock %}
+        {% endblock %}
+    </main>
+    {% block footer %}{% include 'layout/include/footer.html' %}{% endblock %}
+{% endblock container %}
+
+{% block javascript %}
+    {% block scriptslib %}
+        {% include 'layout/lib/_scripts.html' %}
+    {% endblock %}
+{% endblock %}
